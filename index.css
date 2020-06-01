@@ -1,0 +1,197 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .a1 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        .a1 span {
+            display: block;
+        }
+        
+        .a1a {
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-size: 60px;
+            font-weight: 600;
+            word-spacing: 30px;
+            position: relative;
+            background: white;
+            margin-bottom: 20px;
+            animation: ani1 2s;
+        }
+        
+        @keyframes ani1 {
+            0% {
+                color: white;
+                transition: 0.7s;
+                margin-bottom: -40px;
+            }
+            50% {
+                color: black;
+                margin-bottom: -40px;
+            }
+            100% {
+                color: black;
+                margin-bottom: 20px;
+            }
+        }
+        
+        .a1b {
+            color: teal;
+            font-size: 40px;
+            letter-spacing: 5px;
+            font-weight: 900;
+        }
+        /*search*/
+        
+        .a2 {
+            background: #0fbcf9;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 10%;
+            left: 70%;
+            border-radius: 40px;
+            height: 40px;
+        }
+        
+        .a2b {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #0fbcf9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: right;
+            text-decoration: none;
+        }
+        
+        .a2:hover .a2a {
+            width: 240px;
+            transition: 1s;
+            padding: 0 20px;
+        }
+        
+        .a2:hover .a2b i {
+            color: white;
+        }
+        
+        .a2b i {
+            color: #ff9ff3;
+            font-size: 20px;
+        }
+        
+        .a2a {
+            border: none;
+            outline: none;
+            background: none;
+            float: left;
+            line-height: 40px;
+            color: black;
+            font-weight: 200;
+            text-align: center;
+            width: 0px;
+        }
+        /*icons*/
+        
+        .a3 {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .a4 {
+            position: relative;
+            display: inline-block;
+            background: lightgrey;
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            margin: 10px;
+            border-radius: 30%;
+            outline: none;
+            overflow: hidden;
+        }
+        
+        .a4 i {
+            color: #3498db;
+            line-height: 90px;
+            font-size: 35px;
+        }
+        
+        .a4:hover i {
+            transform: scale(1.7);
+            transition: .7s;
+        }
+        
+        .a4:hover {
+            border-radius: 90px;
+            transition: .7s;
+        }
+        
+        .a4::before {
+            content: "";
+            position: absolute;
+            height: 120%;
+            width: 120%;
+            background: #1dd1a1;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+            ;
+        }
+        
+        @keyframes ani2 {
+            0% {
+                left: -120%;
+                top: 90%;
+            }
+            50% {
+                left: 10%;
+                top: -30%;
+            }
+            100% {
+                left: -10%;
+                top: -10%;
+            }
+        }
+        
+        .a4:hover::before {
+            top: -10%;
+            animation: ani2 2s;
+            left: -10%;
+        }
+        /*images*/
+        
+        .a5 {
+            position: absolute;
+            top: 80%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .a5 input {
+            text-transform: uppercase;
+            background: #1dd1a1;
+            opacity: 0.5;
+            outline: none;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 10px 20px;
+            color: black;
+        }
+        
+        .a5:hover input {
+            background: #1dd1a1;
+            opacity: 1;
+            box-shadow: 15px 15px 50px #1dd1a1;
+        }
